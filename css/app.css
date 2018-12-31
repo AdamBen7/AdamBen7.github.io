@@ -10,6 +10,9 @@ h1, h2, h3, h4, h5, h6 {
 img {
    border:1px solid black;
 }
+a img {
+   border:1px solid black;
+}
 
 .main .projects img{
    border:1px solid black;
