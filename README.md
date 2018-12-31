@@ -1,5 +1,5 @@
 # AdamBen7.github.io
-Test Website
+Personal Website
 
 Welcome to my Website!
 As of December 30th, 2018 this site is in its development(content-wise) and testing(hosting) phases. 
