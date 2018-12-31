@@ -1,0 +1,266 @@
+/* General */
+* {
+  outline: none;
+  font-family: Quicksand;
+
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: Quicksand;
+}
+img {
+   border:1px solid black;
+}
+
+.main .projects img{
+   border:1px solid black;
+}
+
+.button{
+  background-color:black;
+  color:white;
+  font-weight:bold;
+  margin-right:10px;
+}
+.button:hover{
+  background-color:black;
+  color: #FF7F50;
+  font-weight:bold;
+}
+
+.dropdown.menu > li.is-dropdown-submenu-parent > a{
+  border-color: #FF7F50 transparent transparent;
+  color: white;
+}
+.dropdown.menu > li.is-dropdown-submenu-parent > a:hover{
+  border-color: #FF7F50 transparent transparent;
+  color: white;
+}
+.dropdown.menu > li.is-dropdown-submenu-parent > a::after{
+  border-color: #FF7F50 transparent transparent;
+  color: #FF7F50;
+}
+
+.wrap {
+  width: 90%; 
+  max-width: 1100px;
+  margin: 0 auto; /*autocenters*/
+  
+}
+
+.off-canvas-wrapper{
+  background-color: #222;
+}
+
+.display-table{
+  display:table;
+}
+.va-align {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/* Added this whole place*/
+.submenu li{
+	background-color:#222;
+	color: rgba(255,255,255,0.6);	
+}
+
+.is-dropdown-submenu {
+	border: 0;
+}
+
+.dropdown.menu > li > a {
+padding-bottom: 0;	
+padding-top:0;
+}
+
+.dropdown .is-dropdown-submenu a{
+	padding: 0;
+	display:block;
+}
+/*up to here*/
+
+/* Nav - Mobile*/
+.title-bar {
+  background-color:#222;
+  height: 60px;
+}
+
+#mobile-menu {
+  background-color:#222;
+  padding: 10px;
+}
+
+#mobile-menu li {
+  list-style: none;
+}
+
+#mobile-menu a{
+  color: rgba(255,255,255,0.6);
+  font-weight: bold;
+  line-height:2;
+}
+#mobile-menu a:hover{
+  color: rgba(255,255,255,0.8);
+  font-weight: bold;
+  line-height:2;
+}
+
+/* Nav - Desktop */
+.nav-desktop{
+    background-color:#222;
+    min-height: 60px;
+    padding: 0;
+    /*background-image: url("../img/cfpattern.png");*/
+}
+.nav-desktop h3{
+  margin:0;
+}
+
+.site-logo {
+  color:white;
+  line-height:60px;
+}
+
+.nav-desktop .menu-desktop{
+  line-height:60px;
+  background-color: transparent;
+}
+
+.nav-desktop a {
+  display: inline-block;
+  line-height:60px;
+  padding-top: 0;
+  padding-bottom:0;
+  color: white;
+}
+
+.nav-desktop a:hover{
+  background-color: rgba(255,255,255, 0.15);
+  text-decoration: underline;
+}
+
+
+/*If Clicking action's state gets annoying with hover*/
+.nav-desktop .menu a:active{
+  border-left: solid 1px;
+  border-right: solid 1px;
+}
+
+
+/* Hero */
+.hero {
+  background: url("../img/WhiteboardWebsitev2.png") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size:cover;
+  -o-background-size: cover;
+  min-height: 600px;
+  color: #fff;
+  padding:30px;
+  text-align: center;
+  background-position: bottom center;
+  background-attachment:fixed;
+}
+
+.hero h1,
+.hero p{
+  color: rgba(255,255,255, 1);
+  max-width:70%;
+  background-color: rgba(0,0,0,0.5)
+}
+
+.hero a{
+  color: rgba(255,255,255, 1);
+}
+.hero a:hover{
+  color: #FF7F50;
+  text-decoration:underline;
+}
+.hero span{
+  color:#FF7F50;
+  font-weight: bold;
+}
+
+/* Main Section*/
+.main{
+    padding: 60px 0px;
+    background-color: rgba(255,255,255,1);
+}
+.main .cell{
+ padding: 0px 30px; 
+}
+
+.main h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
+.main span{
+  color: #FF7F50;
+}
+
+/* Footer */
+footer { 
+  background-color: #222;
+  padding: 60px 0px;
+  text-align:center;
+
+}
+
+footer h4{
+  color: rgba(255, 255, 255, .8);
+  font-size: 1.4em;
+}
+footer hr{
+  border-color: rgba(255, 255, 255, .15);
+  margin: 10px 5px;
+}
+footer a{
+  color: rgba(255, 255, 255, .8);
+  font-size: 1.1em;
+  display:inline;
+}
+footer p{
+  display: block; /*each anchor takes a full row */
+  color: rgba(255, 255, 255, .6);
+  font-size: .8em;
+}
+footer a span{ /*Reason why we used span*/
+  font-weight: 600;
+  color: rgba(255, 255, 255, .8);
+  font-size:1em;
+}
+
+footer a:hover{
+  color: #FF7F50;
+}
+
+.footer-social {
+text-align:center; /*added recently */
+padding-top: 20px;
+}
+
+.footer-social i {
+    color: rgba(255, 255, 255, .8);
+    margin-left: 20px;
+    font-size: 50px;
+}
+
+.footer-social i:hover {
+    color: #FF7F50;;
+}
+
+
+
+/* Media Query */
+
+@media(max-width: 639px){
+  .nav-desktop{
+    display:none;
+  }
+}
+
+@media(max-width: 875px){
+  .hero h1,
+  .hero p{
+    width: 100%;
+  }
+}

@@ -1,0 +1,138 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adam Benabbou</title>
+	<link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="foundation-icons/foundation-icons.css">
+	<link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+  <body>
+    <div class="off-canvas-wrapper">
+      <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+      
+        <div class="off-canvas position-left" id="mobile-menu" data-off-canvas>
+          <p>Menu</p>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <!-- <li><a href="#">Blog</a></li> -->
+            <li><a href="portfolio.html">Portfolio</a></li>
+			<li><a href="projects.html">Select Project</a></li>
+            <li><a href="Adam_Benabbou_Website.pdf">Resume</a></li>
+            <li><a href="contact_me.html">Contact Me</a></li>  
+          </ul>
+        </div>
+  
+        <!-- Mobile Navigation -->
+        
+        <div class="off-canvas-content" data-off-canvas-content>
+          <div class="title-bar grid-x show-for-small-only">
+            <div class="title-bar-left">
+              <button class="menu-icon" type="button" data-open="mobile-menu"></button>
+              <span class="title-bar-title">Menu</span>
+            </div>
+          </div>
+            
+        <!-- Desktop Navigation -->
+          <nav class="top-bar nav-desktop">
+            <div class="wrap grid-x">
+              <div class="top-bar-left">
+                <h3 class="site-logo">Adam Benabbou</h3>
+              </div>
+              <div class="top-bar-right">
+                <ul class="dropdown menu menu-desktop" data-dropdown-menu>
+                  <li><a href="index.html">Home</a></li>
+                  <!-- <li><a href="#">Blog</a></li> -->
+                  <li><a href="portfolio.html">Portfolio</a></li>
+                  <li><a href="projects.html">Select Projects</a>
+                  <ul class="menu submenu">
+	                     <li><a href="projects-stk.html">AGI EAP Competition</a></li>
+	                     <li><a href="projects-TodaiResearch.html">Research in Tokyo</a></li>
+                       <li><a href="projects.html">See More </a><li>
+	                </ul>
+				  </li>
+                  <li><a href="Adam_Benabbou_Website.pdf">Resume</a></li>
+                  <li><a href="contact_me.html">Contact Me</a></li>  
+                </ul>
+              </div>
+            </div>  
+          </nav>
+          
+          <!-- Main Content -->
+          <section class="main">
+            <div class="projects">
+              <div class="wrap grid-x">
+			    <h2>Characterization of Cyclic Behavior of Materials for Morphing Application </h2>
+          <p> Through my Summer 2018 research internship at the Aoki and Yokozeki Laboratory,
+          I was asked to characterize two different types of materials for their potential application
+          as skin for Dr. Yokozeki's morphing wing. <a href="#"> CLICKABLE LINK </a> </p>
+				<p> Since conventional strain gauges were too stiff to measure these low modulus materials,
+        I proposed then developed a custom image processing method that would track engineering strain 
+        using pixel numbers.</p>
+
+        <p>For recording the experiments, a Dino-Lite Edge 5MP AM7515 Series was carefully pointed directly at
+        the specimen. Video footage were saved as video files (WMP files) in RGB24 format at 10 frames per second on the
+        desktop that powered the DINO camera via USB. Using MATLAB, frames were extracted at certain
+        intervals. </p>
+        <p>The optical strain detection method developed relied heavily on MATLAB's image processing toolbox.
+        Functions such as color filters, brightness adjustments, and edge detection were used to isolate the 
+        white markers drawn on the specimen. This was necessary for the algorithm to measure the distance between
+        the two lines and track changes. Once strain measurements were obtained, the Savitzky-Golay filter was used
+        to smooth the curve.</p>
+        <p> For validating the algorithm's accuracy, a similar tensile experiment was conducted on a steel specimen
+        and measurements results were compared to ones obtained concurently by a strain gauge. The comparison is shown below</p>
+        <p> IMAGE OF STEEL SPECIMEN PLOT HERE</p> 
+        <p> </p>
+
+        <div class="wrap grid-x">
+              <div class="cell">
+                  <a href="#"><img src="img/darkplaceholder.png" alt="desc" /></a>
+                  <h6 style="text-align:center">INSERT GIF</h6>
+              </div>
+        </div>
+        
+        <p> A Video of the successful test flight is shown below.</p>
+        <p> VIDEO HERE</p>
+
+				<p> </p>
+        
+				
+				
+			  </div>
+			  <div class="wrap grid-x">
+			  <h5>Supporting Links Below</h5>
+			  <p>  </p>
+			  </div>
+            </div>
+          </section>
+          
+          
+          <!-- Footer Section -->
+          <footer class="wrap">
+            <div class="wrap">
+              <h4> Contact Me By Email or Social Media</h4>
+              <hr>
+              <a href="mailto:adam.benabb@gmail.com"><span> Email Address: </span>adam.benabb@gmail.com</a>
+            </div>	
+
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/adam.benabbou"><i class="fi fi-social-facebook"></i></a>
+                    <a href="https://www.instagram.com/adam.pngw/"><i class="fi fi-social-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/adambenabbou/"><i class="fi fi-social-linkedin"></i> </a>
+                    <a href="https://github.com/AdamBen7"><i class="fi fi-social-github"></i></a>
+                </div>
+                <div><p>Copyright © 2018 Adam Benabbou</p></div>
+
+          </footer>
+        </div>
+      </div>
+    </div>
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

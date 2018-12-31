@@ -1,0 +1,138 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adam Benabbou</title>
+	<link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="foundation-icons/foundation-icons.css">
+	<link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+  <body>
+    <div class="off-canvas-wrapper">
+      <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+      
+        <div class="off-canvas position-left" id="mobile-menu" data-off-canvas>
+          <p>Menu</p>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <!-- <li><a href="#">Blog</a></li> -->
+            <li><a href="portfolio.html">Portfolio</a></li>
+			<li><a href="projects.html">Select Project</a></li>
+            <li><a href="Adam_Benabbou_Website.pdf">Resume</a></li>
+            <li><a href="contact_me.html">Contact Me</a></li>  
+          </ul>
+        </div>
+  
+        <!-- Mobile Navigation -->
+        
+        <div class="off-canvas-content" data-off-canvas-content>
+          <div class="title-bar grid-x show-for-small-only">
+            <div class="title-bar-left">
+              <button class="menu-icon" type="button" data-open="mobile-menu"></button>
+              <span class="title-bar-title">Menu</span>
+            </div>
+          </div>
+            
+        <!-- Desktop Navigation -->
+          <nav class="top-bar nav-desktop">
+            <div class="wrap grid-x">
+              <div class="top-bar-left">
+                <h3 class="site-logo">Adam Benabbou</h3>
+              </div>
+              <div class="top-bar-right">
+                <ul class="dropdown menu menu-desktop" data-dropdown-menu>
+                  <li><a href="index.html">Home</a></li>
+                  <!-- <li><a href="#">Blog</a></li> -->
+                  <li><a href="portfolio.html">Portfolio</a></li>
+                  <li><a href="projects.html">Select Projects</a>
+                  <ul class="menu submenu">
+	                     <li><a href="projects-stk.html">AGI EAP Competition</a></li>
+	                     <li><a href="projects-TodaiResearch.html">Research in Tokyo</a></li>
+                       <li><a href="projects.html">See More </a><li>
+	                </ul>
+				  </li>
+                  <li><a href="Adam_Benabbou_Website.pdf">Resume</a></li>
+                  <li><a href="contact_me.html">Contact Me</a></li>  
+                </ul>
+              </div>
+            </div>  
+          </nav>
+          
+          <!-- Main Content -->
+          <section class="main">
+            <div class="projects">
+              <div class="wrap grid-x">
+			    <h2>Aircraft Mission Simulation and Analysis Using A Multiplatform Approach</h2>
+				
+				<p>During the Fall 2017 semester, the Aircraft Rapid Prototyping Laboratory (ARPL) was exploring effective methods
+				to develop and test systems for innovative uses of unmanned aerial systems (UAVs), aircraft, and
+				spacecraft. Simulation modularity, fidelity, effectiveness, and affordability are key drivers of prototype
+				designs. The purpose of this particular research thrust was to explore the potential value of AGI’s Systems Tool
+				Kit (STK) software package in the context of aircraft research and demonstrate capabilities including
+				iterative design, cross-platform integration, and near-real time data visualization and analysis.</p>
+				
+				<p>Typically, one would use the STK application in order to create a scenario with
+        certain defined features. One such example would be to test a certain aircraft’s performance as it flies
+        on a pre-defined path. This can be extremely valuable for post-mission analysis. However, the use of
+        the STK's Application Programming Interface (API), to generate the scenarios defined by code could bring additional capabilities. 
+        Hence, I proposed then developed a project which combined STK and Matlab to simulate a scenario with uncertain conditions </p> 
+        
+        <p>By defining certain conditions through code, we were able to test mission feasibilities under 
+        uncertainty conditions. We showed that STK can be a powerful test bed for autonomous control systems. 
+        This should allow us to significantly reduce flight test costs associated with system failures from 
+        early test flights.</p>
+
+        <p>The MATLAB code, through iteration, was able to obtain
+        topographic data around a certain point of interest at a set granularity. Using that data, we were able to
+        determine the peaks of the mountain range in order to estimate ground station blind spots. All this data
+        was stored in MATLAB for further analysis. Using the array of information, the program was able
+        autonomously generate flight paths for the Global Hawk and find the ground vehicle, which had been
+        placed pseudo-randomly behind the mountain range. </p>
+
+				<p>A module of this project was submitted to <a href="http://www.agi.com/news/blog/january-2018/eapfall-2017-university-grant-competition-winners!"> Analytical 
+				Graphics' Educational Alliance Program University Grant Competition </a> 
+				where it placed third. </p>
+				
+				<p>
+        A video of my full presentation can be found here. 
+				</p>
+				
+				
+			  </div>
+			  <div class="wrap grid-x">
+			  <h5>Supporting Links Below</h5>
+			  
+			  </div>
+            </div>
+          </section>
+          
+          
+          <!-- Footer Section -->
+          <footer class="wrap">
+            <div class="wrap">
+              <h4> Contact Me By Email or Social Media</h4>
+              <hr>
+              <a href="mailto:adam.benabb@gmail.com"><span> Email Address: </span>adam.benabb@gmail.com</a>
+            </div>	
+
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/adam.benabbou"><i class="fi fi-social-facebook"></i></a>
+                    <a href="https://www.instagram.com/adam.pngw/"><i class="fi fi-social-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/adambenabbou/"><i class="fi fi-social-linkedin"></i> </a>
+                    <a href="https://github.com/AdamBen7"><i class="fi fi-social-github"></i></a>
+                </div>
+                <div><p>Copyright © 2018 Adam Benabbou</p></div>
+
+          </footer>
+        </div>
+      </div>
+    </div>
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
