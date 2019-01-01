@@ -1,8 +1,14 @@
-Projects:
-Actual descriptions, pictures, and some results
-Figure out template (key words? What is it? Why is it important? What I did? What can be done? What I learned?)
-Propulsion project?
+##Projects:
+Detail pages on portfolio designs
+Propulsion project code?
+Bash scripts and my .vimrc/bashrc setups?
 
-Ambitious Future:
+##Ambitious Future:
 Figure out displaying 3d models using three.js or WebGL or something similar
-Use javascript to generate portfolio page? 
+Use javascript to generate portfolio pages
+
+##Thoughts:
+To Blog or not to Blog...
+Contact Me Form necessary?
+About Me page necessary? (Currently part of home page)
+Probably NOT going to add a custom comment section 
