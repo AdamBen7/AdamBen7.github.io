@@ -13,7 +13,9 @@ img {
 a img {
    border:1px solid black;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 
 .main .projects img{
    border:1px solid black;
