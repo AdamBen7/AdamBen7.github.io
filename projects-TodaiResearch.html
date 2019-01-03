@@ -78,22 +78,22 @@
                 <h2>Characterization of Cyclic Behavior of Materials for Morphing Application </h2>
                 <p> Through my Summer 2018 research internship at the <a href="http://www.aastr.t.u-tokyo.ac.jp/labo/labo_e.html">Aoki and Yokozeki Laboratory</a>,
                 I was asked to characterize two different types of materials for their potential application
-                as skin for Dr. Yokozeki's morphing wing.</p>
+                as morphing wing skin.</p>
                 <p> Since conventional strain gauges were too stiff to measure these low modulus materials,
-                I proposed then developed a custom image processing method that would track engineering strain 
+                I proposed and then developed a custom image processing Matlab application that would track engineering strain 
                 using pixel numbers.</p>
 
                 <p>For recording the experiments, a Dino-Lite Edge 5MP AM7515 Series was carefully pointed directly at
-                the specimen. Video footage were saved as video files (WMP files) in RGB24 format at 10 frames per second on the
-                desktop that powered the DINO camera via USB. Using MATLAB, frames were extracted at certain
-                intervals. </p>
+                the specimen. Video footage was saved as a WMP file in RGB24 format at 10 frames per second on the
+                desktop that powered the DINO camera via USB. Frames were then extracted at certain
+                intervals by the Matlab application. </p>
                 <p>The optical strain detection method developed relied heavily on MATLAB's image processing toolbox.
-                Functions such as color filters, brightness adjustments, and edge detection were used to isolate the 
+                Functions such as color filtering, brightness adjusting, and edge detecting were used to isolate the 
                 white markers drawn on the specimen. This was necessary for the algorithm to measure the distance between
                 the two lines and track changes. Once strain measurements were obtained, the Savitzky-Golay filter was used
                 to smooth the curve.</p>
                 <p> For validating the algorithm's accuracy, the data obtained by MATLAB was compared to data measured manually using a pixel 
-                distance measuring tool found in MSPaint.exe. A similar tensile experiment was also conducted on a steel specimen
+                distance measuring tool found in common photoshop software. A similar tensile experiment was also conducted on a steel specimen
                 and measurement results were compared to ones obtained concurently by a strain gauge. The comparison plots are shown below.</p>
               </div>
               <div class="wrap grid-x">
@@ -137,7 +137,6 @@
 
                 <div class="footer-social">
                     <a href="https://www.facebook.com/adam.benabbou"><i class="fi fi-social-facebook"></i></a>
-                    <a href="https://www.instagram.com/adam.pngw/"><i class="fi fi-social-instagram"></i></a>
                     <a href="https://www.linkedin.com/in/adambenabbou/"><i class="fi fi-social-linkedin"></i> </a>
                     <a href="https://github.com/AdamBen7"><i class="fi fi-social-github"></i></a>
                 </div>
