@@ -2,6 +2,7 @@
 Detail pages on portfolio designs
 Propulsion project code?
 Bash scripts and my .vimrc/bashrc setups?
+*Make my impact/contributions even more clear.*
 
 ##Ambitious Future:
 Figure out displaying 3d models using three.js or WebGL or something similar
