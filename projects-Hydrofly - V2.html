@@ -1,0 +1,160 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adam Benabbou</title>
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="foundation-icons/foundation-icons.css">
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131546509-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-131546509-1');
+    </script>
+  </head>
+  <body>
+    <div class="off-canvas-wrapper">
+      <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+      
+        <div class="off-canvas position-left" id="mobile-menu" data-off-canvas>
+          <p>Menu</p>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <!-- <li><a href="#">Blog</a></li> -->
+            <li><a href="portfolio.html">Portfolio</a></li>
+			<li><a href="projects.html">Select Project</a></li>
+            <li><a href="Adam_Benabbou_Website.pdf">Resume</a></li>
+            <li><a href="contact_me.html">Contact Me</a></li>  
+          </ul>
+        </div>
+  
+        <!-- Mobile Navigation -->
+        
+        <div class="off-canvas-content" data-off-canvas-content>
+          <div class="title-bar grid-x show-for-small-only">
+            <div class="title-bar-left">
+              <button class="menu-icon" type="button" data-open="mobile-menu"></button>
+              <span class="title-bar-title">Menu</span>
+            </div>
+          </div>
+            
+        <!-- Desktop Navigation -->
+          <nav class="top-bar nav-desktop">
+            <div class="wrap grid-x">
+              <div class="top-bar-left">
+                <h3 class="site-logo">Adam Benabbou</h3>
+              </div>
+              <div class="top-bar-right">
+                <ul class="dropdown menu menu-desktop" data-dropdown-menu>
+                  <li><a href="index.html">Home</a></li>
+                  <!-- <li><a href="#">Blog</a></li> -->
+                  <li><a href="portfolio.html">Portfolio</a></li>
+                  <li><a href="projects.html">Select Projects</a>
+                  <ul class="menu submenu">
+	                     <li><a href="projects-STK.html">AGI EAP Competition</a></li>
+	                     <li><a href="projects-TodaiResearch.html">Research in Tokyo</a></li>
+                       <li><a href="projects.html">See More </a><li>
+	                </ul>
+				  </li>
+                  <li><a href="Adam_Benabbou_Website.pdf">Resume</a></li>
+                  <li><a href="contact_me.html">Contact Me</a></li>  
+                </ul>
+              </div>
+            </div>  
+          </nav>
+          
+          <!-- Main Content -->
+          <section class="main">
+            <div class="projects">
+              <div class="wrap grid-x">
+			    <h2>Project Hydrofly</h2>
+				
+				<p> As part of my Aerospace Engineering degree requirement at the University of Alabama,
+        I took a series of two Senior Design courses. Through these courses, I had to work on a year-long
+        aeronautics or astronautics design project with a team.</p>
+        <p> Despite my prior experiences with building, designing, and flying <a href="projects-Wing">fixed-wing model airplanes</a>
+        and <a href="portfolio.html">drones</a>, I selected an astronautics project since I wanted to expand my knowledge in aerospace. </p> 
+        <p> Project Hydrofly is a client-based project which requires a final demonstration on March 2019. As part of UA's effort 
+        of increasing research in astronautics, my team was asked to build a testbed for planetary landers, propulsion, and controls research projects.</p>
+        <p> During Fall 2018, my primary role as the Systems Integration Lead was to develop 
+        <a href="https://github.com/AdamBen7/PracticeRepo/tree/master/Matlab/Hydrofly%20Prototyping">a simulation </a> and
+        make several key assumptions to identify project feasibility. Through the process of
+        creating the simulation, I produced several equations which were used in the flight control
+        system. As more unknown system parameters were identified through subsystem analyses and trade
+        studies, I lead the improvement efforts for the simulation to determine subsystem goals.
+        I also developed the mathematical model and algorithm for a pulsed throttle control system for 
+        hovering.</p>  
+        <p>The simulation proved that a pulsed throttle control system could theoretically work to make a
+        vehicle ascend, hover, and descend.</p>
+        <h5>Pulsed Throttle Control</h5>
+        <p>We know that a certain delta-v, ∆𝑣, is needed for a stationary
+        vehicle to experience motion. This ∆𝑣 could be calculated using the rocket equation, shown below.</br>
+        ∆𝑣 = 𝑔 ∙ 𝑑𝑡 + 𝑢𝑒∙ ln(𝑚𝑖/𝑚𝑓) </br>
+        In this equation, gravity is constant, flow velocity 𝑢𝑒 is determined by the system’s properties,
+        and 𝑑𝑡 is chosen by us based on the period length of a duty cycle. The period length will be determined
+        in the future based on the solenoid valve’s response rate and trial-and-error through numerous
+        simulations and tests. This equation indicates that the only thing that can be controlled is the difference 
+        between the initial mass and final mass over a finite period, 𝑑𝑡. This expression provides us with the
+        mass flow rate needed to obtain the desired ∆𝑣.</br>
+        𝑚̇ = (𝑚𝑓 − 𝑚𝑖)𝑑𝑡</br>
+        Rearranging the ∆𝑣 equation to solve for final mass provides us with the following:</br>
+        𝑚𝑓 = 𝑚𝑖 ∙ 𝑒^(𝑔∙𝑑𝑡∙𝑢𝑒−𝑑𝑣∙𝑢𝑒)</br>
+        We can then relate the mass flow rate with the maximum mass flowrate (which is when flow is
+        at 100%) to obtain the 𝑑𝑢𝑡𝑦𝑐𝑦𝑐𝑙𝑒 value outputted by the control system. This value is the fraction of
+        time, over which, the solenoid valve will be expelling water out of the system to produce thrust.</br>
+        If 𝑚̇ > 𝑚̇@100% , then 𝑚̇ = 𝑚̇@100% . If 𝑚̇ < 0, then 𝑚̇ = 0, since the system cannot have negative thrust, or absorb propellant.
+        Depending on the resolution of the duty cycle, the value obtained from these equations will be
+        rounded to the nearest achievable duty cycle. </p>
+        </br>
+
+        <div class="wrap grid-x">
+              <div class="cell">
+                  <a href="#"><img src="img/projects/ControlDiagram.png" alt="desc" /></a>
+                  <h6 style="text-align:center">Control Diagram Schematic For Hydrofly Planetary Lander</h6>
+              </div>
+        </div>	 
+			  </div>
+        <h5 class="wrap">Supporting Links Below</h5>
+              </br>
+              <div class="wrap grid-x">
+              <a class="button" href="https://github.com/AdamBen7/PracticeRepo/tree/master/Matlab/Hydrofly%20Prototyping">View Github Repo - Matlab Simulation</a>
+              
+              </br>
+              </div>
+            </div>
+          </section>
+          
+          
+          <!-- Footer Section -->
+          <footer class="wrap">
+            <div class="wrap">
+              <h4> Contact Me By Email or Social Media</h4>
+              <hr>
+              <a href="mailto:adam.benabb@gmail.com"><span> Email Address: </span>adam.benabb@gmail.com</a>
+            </div>	
+
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/adam.benabbou"><i class="fi fi-social-facebook"></i></a>
+                    <a href="https://www.linkedin.com/in/adambenabbou/"><i class="fi fi-social-linkedin"></i> </a>
+                    <a href="https://github.com/AdamBen7"><i class="fi fi-social-github"></i></a>
+                </div>
+                <div><p>Copyright © 2018-2019 Adam Benabbou</p></div>
+
+          </footer>
+        </div>
+      </div>
+    </div>
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
