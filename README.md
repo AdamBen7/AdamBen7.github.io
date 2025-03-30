@@ -7,6 +7,7 @@ Personal Website
 Website de-activated as it is no longer applicable to my life. Perhaps I might start another project in the future... We'll see!
 
 Note to self: https://docs.github.com/en/pages/getting-started-with-github-pages/unpublishing-a-github-pages-site
+
 ---
 [2018] Original:
 
